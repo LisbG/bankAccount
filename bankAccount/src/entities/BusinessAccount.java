@@ -10,6 +10,7 @@ public class BusinessAccount extends Account {
 		this.loanLimit = loanLimit;
 	}
 
+	@Override
 	public String getAccountNumber() {
 		return this.accountNumber;
 	}

@@ -10,8 +10,13 @@ public class SavingsAccount extends Account {
 		this.interestRate = interestRate;
 	}
 	
+	@Override
 	public String getAccountNumber() {
 		return this.accountNumber;
+	}
+	
+	public void updateBalance() {
+		balance += (balance * interestRate);
 	}
 
 }

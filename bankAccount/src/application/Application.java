@@ -12,9 +12,15 @@ public class Application {
 		BusinessAccount ba = new BusinessAccount("Gabriel", 20.000, 1.000);
 		SavingsAccount sa = new SavingsAccount(baseAccount.getHolder(), 5.000, 1.5);
 		
-		System.out.println(baseAccount.getAccountNumber());
-		System.out.println(ba.getAccountNumber());
-		System.out.println(sa.getAccountNumber());
+		// Upcasting
+		
+		Account accountBusiness = new BusinessAccount("Maisa", 40.000, 2.000);	
+		
+		// Downcasting
+		
+		if (sa instanceof SavingsAccount) {
+			System.out.println("Variable sa are instance of SavingAccounts");
+		}
 	}
 
 }

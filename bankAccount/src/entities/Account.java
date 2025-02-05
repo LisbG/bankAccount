@@ -4,7 +4,7 @@ public class Account {
 
 	private String accountNumber  = CreateID.newId();
 	private String holder;
-	private Double balance;
+	protected Double balance;
 
 	public Account(String holder, Double balance) {
 		this.holder = holder;
